@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Button } from "../styles/Button";
 
 const HeroSection = ({ myData }) => {
-  // const { name } = myData;
   return (
     <Wrapper>
       <div className="container">

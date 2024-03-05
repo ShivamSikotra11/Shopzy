@@ -87,6 +87,7 @@ ${"" /* resuable code section  */}
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  // border:2px solid red;
 }
 
 .grid {
