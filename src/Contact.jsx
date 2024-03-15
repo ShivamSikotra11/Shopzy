@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 
 const Contact = () => {
@@ -31,6 +32,10 @@ const Contact = () => {
       }
     }
   `;
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when component mounts
+  }, []);
 
   return (
     <Wrapper>
