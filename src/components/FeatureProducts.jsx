@@ -7,7 +7,7 @@ const FeatureProducts = () => {
   if (isLoading) {
     return <div className="">.......Loading</div>;
   }
-
+  // console.log(featureProducts);
   return (
     <Wrapper className="section">
       <div className="container">
@@ -17,7 +17,6 @@ const FeatureProducts = () => {
           {featureProducts.map((curProduct) => {
             return <Product key={curProduct.id} {...curProduct}></Product>;
           })}
-          ;
         </div>
       </div>
     </Wrapper>
