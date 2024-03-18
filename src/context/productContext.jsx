@@ -21,7 +21,6 @@ const initialState = {
 };
 
 const AppProvider = ({ children }) => {
-  
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const getProducts = async (url) => {
@@ -51,7 +50,7 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     getProducts();
   }, []);
-
+  // console.log("pro:", state);
   return (
     <AppContext.Provider value={{ ...state, getSingleProduct }}>
       {children}
