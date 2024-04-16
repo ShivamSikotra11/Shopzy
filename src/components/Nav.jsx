@@ -162,6 +162,7 @@ const Nav = () => {
   return (
     <Nav>
       <div className={menuIcon ? "navbar active" : "navbar"}>
+        
         <ul className="navbar-lists">
           <li>
             <NavLink

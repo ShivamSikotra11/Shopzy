@@ -11,14 +11,13 @@ import ErrorPage from "./components/ErrorPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-
 const App = () => {
   const theme = {
     colors: {
       heading: "rgb(24 24 29)",
       text: "rgba(29 ,29, 29, .8)",
       white: "#fff",
-      black: " #212529",
+      black: " #212529", 
       helper: "#8490ff",
 
       bg: "#F6F8FA",

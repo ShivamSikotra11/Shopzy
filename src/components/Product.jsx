@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import FormatPrice from "../helpers/FormatPrice";
+import { useCartContext } from "../context/cart_context";
 
 const Product = (curProduct) => {
   const { id, name, image, price, category } = curProduct;
+  const {addToCart} = useCartContext();
   
   return (
     <NavLink to={`/singleproduct/${id}`}>
